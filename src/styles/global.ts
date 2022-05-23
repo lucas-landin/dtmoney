@@ -68,7 +68,7 @@ justify-content:center;
 }
 
 .react-modal-content{
-width:100%
+width:100%;
 max-width:576px;
 background: var(--background);
 position:relative;

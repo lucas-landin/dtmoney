@@ -4,7 +4,9 @@ import { GlobalStyles } from "./styles/global";
 import Modal from 'react-modal'
 import { useState } from "react";
 import { NewTransactionModal } from "./components/NewTransactionModal";
+
 Modal.setAppElement('#root')
+
 export function App() {
   const[isTransactionModalOpen,setIsNewTransactionModalOpen]=useState(false);
 

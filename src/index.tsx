@@ -4,7 +4,8 @@ import {App} from './App';
 import { createServer } from 'miragejs';
 createServer({
   routes() {
-  this.namespace = 'api';
+  this.namespace ='api';
+
   this.get('/transactions', ()=>{
     return [
       {
@@ -13,10 +14,14 @@ createServer({
         amount: 400,
         type:'deposite',
         category:'food',
-        date:'25/04/2022'
+        date:new Date()
       }
     ]
   })
+  this.post('/transactions', (schema, request)=>{
+    const data = JSON.parse(request.requestBody)
+    return data
+  } ) 
   }
 })
 

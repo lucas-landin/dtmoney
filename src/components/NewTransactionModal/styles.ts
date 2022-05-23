@@ -45,5 +45,7 @@ transition: filter 0.2s;
     filter:brightness(0.9);
 }
 }
+`
+export const TransactionTypeContainer = styled.div`
 
 `
